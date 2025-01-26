@@ -1,0 +1,155 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net8.0-tizen</TargetFrameworks> -->
+
+		<!-- Note for MacCatalyst:
+		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
+		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
+		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
+		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
+		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
+
+		<OutputType>Exe</OutputType>
+		<RootNamespace>FOApp</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Display name -->
+		<ApplicationTitle>FOApp</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.vnptnet3.FOApp</ApplicationId>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
+	  <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="AppShell.xaml.cs" />
+	  <Compile Remove="DetailPage.xaml.cs" />
+	  <Compile Remove="Services\DownloadService.cs" />
+	  <Compile Remove="ViewModel\CustomPinViewModel.cs" />
+	  <Compile Remove="ViewModel\DetailViewModel.cs" />
+	  <Compile Remove="ViewModel\MainViewModel.cs" />
+	  <Compile Remove="ViewModel\MapViewModel.cs" />
+	  <Compile Remove="Views\ChangePasswordPage.xaml.cs" />
+	  <Compile Remove="Views\ConnectStatePage.xaml.cs" />
+	  <Compile Remove="Views\CustomPin.xaml.cs" />
+	  <Compile Remove="Views\DownloadDataPage.xaml.cs" />
+	  <Compile Remove="Views\FiberDataPage.xaml.cs" />
+	  <Compile Remove="Views\FiberDetailPage.xaml.cs" />
+	  <Compile Remove="Views\FiberItemPage.xaml.cs" />
+	  <Compile Remove="Views\FiberLinePage.xaml.cs" />
+	  <Compile Remove="Views\FiberPage.xaml.cs" />
+	  <Compile Remove="Views\LoginPage.xaml.cs" />
+	  <Compile Remove="Views\LogoutPage.xaml.cs" />
+	  <Compile Remove="Views\MenuPage.xaml.cs" />
+	  <Compile Remove="Views\NotesPage.xaml.cs" />
+	  <Compile Remove="Views\PolylinePage.xaml.cs" />
+	  <Compile Remove="Views\TipCalculator.xaml.cs" />
+	  <Compile Remove="Views\TuyencapByUserPage.xaml.cs" />
+	  <Compile Remove="Views\UserInfoPage.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="AppShell.xaml" />
+	  <MauiXaml Remove="DetailPage.xaml" />
+	  <MauiXaml Remove="MainPage-backup phantrang dulieubando.xaml" />
+	  <MauiXaml Remove="Views\ChangePasswordPage.xaml" />
+	  <MauiXaml Remove="Views\ConnectStatePage.xaml" />
+	  <MauiXaml Remove="Views\CustomPin.xaml" />
+	  <MauiXaml Remove="Views\DownloadDataPage.xaml" />
+	  <MauiXaml Remove="Views\FiberDataPage.xaml" />
+	  <MauiXaml Remove="Views\FiberDetailPage.xaml" />
+	  <MauiXaml Remove="Views\FiberItemPage.xaml" />
+	  <MauiXaml Remove="Views\FiberLinePage.xaml" />
+	  <MauiXaml Remove="Views\FiberPage.xaml" />
+	  <MauiXaml Remove="Views\LoginPage.xaml" />
+	  <MauiXaml Remove="Views\LogoutPage.xaml" />
+	  <MauiXaml Remove="Views\MenuPage.xaml" />
+	  <MauiXaml Remove="Views\NotesPage.xaml" />
+	  <MauiXaml Remove="Views\PolylinePage.xaml" />
+	  <MauiXaml Remove="Views\TipCalculator.xaml" />
+	  <MauiXaml Remove="Views\TuyencapByUserPage.xaml" />
+	  <MauiXaml Remove="Views\UserInfoPage.xaml" />
+	</ItemGroup>
+
+	
+	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+		<PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.4" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Onion.Maui.GoogleMaps" Version="6.0.0" />
+		<PackageReference Include="Onion.Maui.GoogleMaps.Clustering" Version="6.0.0" />
+		<PackageReference Include="SkiaSharp" Version="2.88.8" />
+		<PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
+		<PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.8" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />		
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
+		<PackageReference Include="Xamarin.AndroidX.Collection" Version="1.3.0.2" />
+		<PackageReference Include="Xamarin.AndroidX.Collection.Ktx" Version="1.3.0.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Platforms\Windows\App.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ChonTuyenCapPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FiberMapClusteringPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\FiberMapPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LogPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="ViewModel\" />
+	</ItemGroup>
+</Project>

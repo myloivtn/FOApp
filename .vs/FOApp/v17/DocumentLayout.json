@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CS\\FOApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|d:\\cs\\foapp\\foapp\\views\\chontuyencappage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|solutionrelative:foapp\\views\\chontuyencappage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|D:\\CS\\FOApp\\foapp\\services\\cachedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|solutionrelative:foapp\\services\\cachedservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|D:\\CS\\FOApp\\foapp\\models\\fiberitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|solutionrelative:foapp\\models\\fiberitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|D:\\CS\\FOApp\\foapp\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F8A734-B542-4E40-98A7-86926F1BE1D4}|FOApp\\FOApp.csproj|solutionrelative:foapp\\services\\mapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\CS\\FOApp\\foapp\\views\\polylinepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:foapp\\views\\polylinepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 252,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChonTuyenCapPage.xaml.cs",
+              "DocumentMoniker": "D:\\CS\\FOApp\\FOApp\\Views\\ChonTuyenCapPage.xaml.cs",
+              "RelativeDocumentMoniker": "FOApp\\Views\\ChonTuyenCapPage.xaml.cs",
+              "ToolTip": "D:\\CS\\FOApp\\FOApp\\Views\\ChonTuyenCapPage.xaml.cs",
+              "RelativeToolTip": "FOApp\\Views\\ChonTuyenCapPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T09:14:53.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PolylinePage.xaml.cs",
+              "DocumentMoniker": "D:\\CS\\FOApp\\FOApp\\Views\\PolylinePage.xaml.cs",
+              "RelativeDocumentMoniker": "FOApp\\Views\\PolylinePage.xaml.cs",
+              "ToolTip": "D:\\CS\\FOApp\\FOApp\\Views\\PolylinePage.xaml.cs",
+              "RelativeToolTip": "FOApp\\Views\\PolylinePage.xaml.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T03:24:36.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FiberItem.cs",
+              "DocumentMoniker": "D:\\CS\\FOApp\\FOApp\\Models\\FiberItem.cs",
+              "RelativeDocumentMoniker": "FOApp\\Models\\FiberItem.cs",
+              "ToolTip": "D:\\CS\\FOApp\\FOApp\\Models\\FiberItem.cs",
+              "RelativeToolTip": "FOApp\\Models\\FiberItem.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAAFkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T01:30:34.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CachedService.cs",
+              "DocumentMoniker": "D:\\CS\\FOApp\\FOApp\\Services\\CachedService.cs",
+              "RelativeDocumentMoniker": "FOApp\\Services\\CachedService.cs",
+              "ToolTip": "D:\\CS\\FOApp\\FOApp\\Services\\CachedService.cs",
+              "RelativeToolTip": "FOApp\\Services\\CachedService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T09:40:25.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Mapservice.cs",
+              "DocumentMoniker": "D:\\CS\\FOApp\\FOApp\\Services\\Mapservice.cs",
+              "RelativeDocumentMoniker": "FOApp\\Services\\Mapservice.cs",
+              "ToolTip": "D:\\CS\\FOApp\\FOApp\\Services\\Mapservice.cs",
+              "RelativeToolTip": "FOApp\\Services\\Mapservice.cs",
+              "ViewState": "AQIAAHgEAAAAAAAAAAAAAHkEAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T14:18:09.896Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 85,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

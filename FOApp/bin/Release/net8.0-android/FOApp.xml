@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FOApp</name>
+    </assembly>
+    <members>
+        <member name="T:FOApp.Helpers.ObservableObject">
+            <summary>
+            Observable object with INotifyPropertyChanged implemented
+            </summary>
+        </member>
+        <member name="M:FOApp.Helpers.ObservableObject.SetProperty``1(``0@,``0,System.String,System.Action)">
+            <summary>
+            Sets the property.
+            </summary>
+            <returns><c>true</c>, if property was set, <c>false</c> otherwise.</returns>
+            <param name="backingStore">Backing store.</param>
+            <param name="value">Value.</param>
+            <param name="propertyName">Property name.</param>
+            <param name="onChanged">On changed.</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="T:FOApp.Models.Emoji">
+            <summary>
+            Emoji class.
+            </summary>
+        </member>
+    </members>
+</doc>

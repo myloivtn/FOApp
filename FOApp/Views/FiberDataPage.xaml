@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:FOApp.Models"
+             x:Class="FOApp.Views.FiberDataPage" >
+    <ScrollView>
+        <VerticalStackLayout>
+            <CollectionView
+            ItemsSource="{Binding FiberSegments}"
+            ItemsLayout="HorizontalList"
+            SelectionMode="Single"
+            SelectionChanged="OnSegmentSelected"
+            HorizontalOptions="Fill"
+            HeightRequest="100">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FiberSegment">
+                        <Grid Padding="10" ColumnDefinitions="50">
+                            <Label x:Name="Tuyen" Text="{Binding Tuyen}" Grid.Column="0"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <CollectionView
+            ItemsSource="{Binding SelectedFiberSegmentItems}"
+            SelectionMode="None"
+            VerticalOptions="FillAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:FiberItem">
+                        <Grid Padding="10" ColumnDefinitions="50">
+                            <Label x:Name="Doan" Text="{Binding Doan}" Grid.Column="0"/>
+                            <Label x:Name="Diemdacbiet" Text="{Binding Diemdacbiet}" Grid.Column="1"/>
+                            <Label x:Name="Chieudai" Text="{Binding Chieudaituyen}" Grid.Column="2"/>
+                            <Label x:Name="Huongtuyen" Text="{Binding Huongtuyen}" Grid.Column="3"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Grid RowDefinitions="*,Auto">
+                <!-- Phần hiển thị các điểm cáp quang -->
+                <CollectionView 
+                  VerticalOptions="Fill"
+                  ItemsSource="{Binding FiberItems}"
+                  SelectionMode="Single"
+                  SelectionChanged="CollectionView_SelectionChanged">   
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:FiberItem">
+                            <Grid RowDefinitions="Auto, *, Auto" ColumnDefinitions="120, *,50, 50, 15" Padding="10">
+                                <Label x:Name="Doan" Text="{Binding Doan}" TextColor="Blue" Grid.Row="0" Grid.Column="0"/>
+                                <Label x:Name="Diemdacbiet" Text="{Binding Diemdacbiet}" Grid.Row="0" Grid.Column="1"/>
+                                <Label x:Name="Chieudai" Text="{Binding Chieudaituyen}" Grid.Row="0" Grid.Column="2"/>
+                                <Label x:Name="Huongtuyen" Text="{Binding Huongtuyen}" Grid.Row="0" Grid.Column="3"/>
+                                <Label Text="✔️" VerticalTextAlignment="Center" IsVisible="{Binding Done}" Grid.Row="0" Grid.Column="4"/>
+                                <!-- Giữ lại để biểu diễn vị trí tính theo phần trăm so với chiều dài toàn tuyến
+                    <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>-->
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

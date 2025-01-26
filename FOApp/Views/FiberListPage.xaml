@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:FOApp.Models"
+             x:Class="FOApp.Views.FiberListPage"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="True">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="10">
+
+            <!-- Nhãn hiển thị trạng thái kết nối đến server -->
+            <Image x:Name="ServerStatusIcon" WidthRequest="24" HeightRequest="24" />
+            <!-- Nhãn trạng thái kết nối -->
+            <Label x:Name="serverStatusLabel" Text="THỐNG KÊ DỮ LIỆU:" TextColor="Gray" />
+
+            <!-- Thanh tiến trình hiển thị tiến độ tải dữ liệu -->
+            <ProgressBar x:Name="DownloadProgressBar" 
+                         Progress="0" 
+                         HorizontalOptions="FillAndExpand" 
+                         HeightRequest="20" 
+                         Margin="0,20,0,0" />
+
+            <!-- Nhãn hiển thị chi tiết tiến trình tải -->
+            <Label x:Name="ProgressDetailLabel" 
+                   Text="" 
+                   HorizontalOptions="Center" 
+                   FontSize="Small"
+                   TextColor="Gray" />
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button x:Name="SyncButton" Text="Get data" Clicked="SyncButton_Clicked" />
+                <Button x:Name="SyncPinButton" Text="Get Pin data" Clicked="SyncPinButton_Clicked" />
+                <Button x:Name="SyncLineButton" Text="Get Line data" Clicked="SyncLineButton_Clicked" />
+            </HorizontalStackLayout>
+            <!-- Nút để đồng bộ dữ liệu --><!--
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                 <Button x:Name="SyncButton" 
+                        Text="Get data" 
+                        Clicked="SyncButton_Clicked" />               
+            </HorizontalStackLayout>
+            --><!-- Nút để đồng bộ dữ liệu --><!--
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button x:Name="SyncPinButton" 
+              Text="Get Pin data" 
+              Clicked="SyncPinButton_Clicked" />
+            </HorizontalStackLayout>
+            --><!-- Nút để đồng bộ dữ liệu --><!--
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+                <Button x:Name="SyncLineButton" 
+              Text="Get Line data" 
+              Clicked="SyncLineButton_Clicked" />
+            </HorizontalStackLayout>-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

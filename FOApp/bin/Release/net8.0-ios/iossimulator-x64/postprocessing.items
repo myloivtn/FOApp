@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="FOApp.app/FOApp">
+      <IsAppExtension>false</IsAppExtension>
+      <BCSymbolMapName>FOApp.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>FOApp.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>\Users\loinguyen\Library\Caches\Xamarin\mtbs\builds\FOApp\6c9ad02e22c0b174cc61f8f88ddadbbdc77331228a5a6241b29223f7c227debf\obj\Release\net8.0-ios\iossimulator-x64\mtouch-symbols.list</SymbolFile>
+      <DSymName>FOApp.app.dSYM</DSymName>
+      <SourceProjectPath>D:\CS\FOApp\FOApp</SourceProjectPath>
+      <IsXPCService></IsXPCService>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

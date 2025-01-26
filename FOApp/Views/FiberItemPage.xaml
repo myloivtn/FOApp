@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FOApp.Views.FiberItemPage"
+             Title="{Binding Doan}"
+             xmlns:models="clr-namespace:FOApp.Models"
+             x:DataType="models:FiberItem">
+
+    <ScrollView>       
+        <VerticalStackLayout Padding="2" Spacing="2" VerticalOptions="StartAndExpand">
+            <!--<HorizontalStackLayout Spacing="5">
+                <Label Text="Đoạn Lý trình" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Doan}" Placeholder="Nhập đoạn" Keyboard="Text"/>
+            </HorizontalStackLayout>-->
+            <!--<HorizontalStackLayout Spacing="10">
+                <Button Text="Chụp ảnh"
+                Clicked="OnCapturePhotoClicked"
+                HorizontalOptions="CenterAndExpand" />  
+                <Image x:Name="image" WidthRequest="110" />
+                --><!--<Image Source="{Binding ImageSource}" />--><!--
+            </HorizontalStackLayout>-->
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Chiều dài tuyến (m)" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Chieudaituyen}" Placeholder="Nhập chiều dài tuyến" Keyboard="Numeric"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Lý trình 1 (km)" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Lytrinh1}" Placeholder="Nhập lý trình 1" Keyboard="Numeric"/>
+            </HorizontalStackLayout>            
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="GPS lý trình 1" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding GPSLytrinh1}" Placeholder="Nhập GPS lý trình 1" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Điểm đặc biệt" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Diemdacbiet}" Placeholder="Nhập điểm đặc biệt" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Phương thức LĐ" WidthRequest="110" VerticalOptions="Center" />
+                <Entry Text="{Binding Phuongthuclapdat}" Placeholder="Nhập phương thức lắp đặt" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Loại cáp" WidthRequest="110" VerticalOptions="Center" />
+                <Entry Text="{Binding Loaicap}" Placeholder="Nhập loại cáp" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Chiều dài (m)" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Chieudai}" Placeholder="Chiều dài Chôn/treo/qua cầu/ dự trữ (mét)" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Hướng tuyến" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Huongtuyen}" Placeholder="Nhập hướng tuyến" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Vị trí tuyến" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Vitrituyen}" Placeholder="Nhập vị trí tuyến (cách mép đường bộ - mét)" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Độ sâu (m)" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Dosau}" Placeholder="Nhập độ sâu/chiều cao cáp treo (đi nổi: 0)" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Số trụ điện lực" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Sotrudienluc}" Placeholder="Nhập số trụ điện lực" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Độ cao TDL" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding DocaoTDL}" Placeholder="Nhập độ cao trụ điện lực" Keyboard="Text"/>
+            </HorizontalStackLayout>                       
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Tên đường" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Tenduong}" Placeholder="Nhập tên đường" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Tên cầu cống" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Tencaucong}" Placeholder="Nhập tên cầu cống" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Lý trình 2 (km)" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Lytrinh2}" Placeholder="Nhập lý trình 2" Keyboard="Numeric"/>
+            </HorizontalStackLayout>            
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="GPS lý trình 2" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding GPSLytrinh2}" Placeholder="Nhập GPS lý trình 2" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Ghi chú" WidthRequest="110" VerticalOptions="Center"/>
+                <Entry Text="{Binding Ghichu}" Placeholder="Nhập ghi chú" Keyboard="Text"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Dữ liệu mới" WidthRequest="110" VerticalOptions="Center"/>
+                <Switch IsToggled="{Binding Done}" />
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="10">
+            <Button Text="Lưu"
+                Clicked="OnSaveClicked" />
+            <Button Text="Xóa"
+                Clicked="OnDeleteClicked" />
+            <Button Text="Bỏ qua"
+                Clicked="OnCancelClicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,39 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:FOApp"
+             xmlns:views="clr-namespace:FOApp.Views"
+             x:Class="FOApp.App">
+    <Application.MainPage>
+        <Shell>
+            <TabBar>
+                <Tab  Title="Home" Icon="home.png">
+                    <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+                </Tab>
+                <Tab Title="Line" Icon="map.png">
+                    <ShellContent ContentTemplate="{DataTemplate views:ChonTuyenCapPage}" />
+                </Tab>
+                <Tab Title="Data" Icon="download.png">
+                    <ShellContent ContentTemplate="{DataTemplate views:FiberListPage}" />
+                </Tab>
+                <!--<Tab Title="Log" Icon="alert_icon.png">
+                    <ShellContent ContentTemplate="{DataTemplate views:LogPage}" />
+                </Tab>-->
+                <!--<Tab Title="Detail" Icon="connect_icon.png">
+                    <ShellContent ContentTemplate="{DataTemplate views:FiberDataPage}" />
+                </Tab>-->
+                <!--<Tab Title="Menu" Icon="menu.png">
+                    <ShellContent ContentTemplate="{DataTemplate views:CustomPin}" />
+                </Tab>-->
+            </TabBar>
+        </Shell>
+    </Application.MainPage>
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

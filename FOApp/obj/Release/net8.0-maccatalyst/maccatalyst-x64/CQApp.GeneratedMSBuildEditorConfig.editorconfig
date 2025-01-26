@@ -1,0 +1,107 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CQApp
+build_property.ProjectDir = G:\CS\CQApp\CQApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[G:/CS/CQApp/CQApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[G:/CS/CQApp/CQApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[G:/CS/CQApp/CQApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[G:/CS/CQApp/CQApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[G:/CS/CQApp/CQApp/Views/ChangePasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ChangePasswordPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/ChonTuyenCapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.ChonTuyenCapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ChonTuyenCapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ChonTuyenCapPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/DownloadDataPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.DownloadDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DownloadDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DownloadDataPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/FiberDataPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.FiberDataPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FiberDataPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FiberDataPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/FiberItemPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.FiberItemPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FiberItemPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FiberItemPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/FiberLinePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.FiberLinePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FiberLinePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FiberLinePage.xaml
+
+[G:/CS/CQApp/CQApp/Views/FiberListPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.FiberListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\FiberListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\FiberListPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/LogoutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.LogoutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LogoutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LogoutPage.xaml
+
+[G:/CS/CQApp/CQApp/Views/PolylinePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.PolylinePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PolylinePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PolylinePage.xaml
+
+[G:/CS/CQApp/CQApp/Views/UserInfoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CQApp.Views.UserInfoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UserInfoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UserInfoPage.xaml

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FOApp.Views.FiberPage"
+             Title="FiberPage">
+    <CollectionView ItemsSource="{Binding FiberItems}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Margin="10" Padding="10" BorderColor="Gray" CornerRadius="5">
+                    <StackLayout>
+                        <Label Text="{Binding Doan}" FontAttributes="Bold" />
+                        <Label Text="Diemdacbiet: " />
+                        <Label Text="{Binding Diemdacbiet}" />
+                        <Label Text="Phuongthuclapdat: " />
+                        <Label Text="{Binding Phuongthuclapdat}" />
+                        <Label Text="Huongtuyen: " />
+                        <Label Text="{Binding Huongtuyen}" />
+                        <Label Text="Vitrituyen: " />
+                        <Label Text="{Binding Vitrituyen}" />
+                        <Label Text="Chieudaituyen: " />
+                        <Label Text="{Binding Chieudaituyen}" />
+                        <Label Text="Chieudai: " />
+                        <Label Text="{Binding Chieudai}" />
+                        <Label Text="Dosau: " />
+                        <Label Text="{Binding Dosau}" />
+                        <Label Text="Sotrudienluc: " />
+                        <Label Text="{Binding Sotrudienluc}" />
+                        <Label Text="DocaoTDL: " />
+                        <Label Text="{Binding DocaoTDL}" />
+                        <Label Text="Tenduong: " />
+                        <Label Text="{Binding Tenduong}" />
+                        <Label Text="Tencaucong: " />
+                        <Label Text="{Binding Tencaucong}" />
+                        <Label Text="Ghichu: " />
+                        <Label Text="{Binding Ghichu}" />
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</ContentPage>

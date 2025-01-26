@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FOApp.Views.NotesPage"
+             xmlns:mycode="clr-namespace:FOApp"
+             xmlns:notes="clr-namespace:FOApp"
+             Title="NotesPage">
+    <VerticalStackLayout Margin="30,60,30,30" Padding="{OnPlatform iOS='30,60,30,30', Default='30'}" BackgroundColor="{OnPlatform WinUI=Yellow, iOS=Silver, Android=Green}">
+        <!--<VerticalStackLayout.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color">
+                <On Platform="iOS" Value="Silver" />
+                <On Platform="Android" Value="Green" />
+                <On Platform="WinUI" Value="Yellow" />
+            </OnPlatform>
+        </VerticalStackLayout.BackgroundColor>-->
+        <!--<VerticalStackLayout.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="30,60,30,30" />
+            <On Platform="Android" Value="30" />
+            <On Platform="WinUI" Value="30" />
+        </OnPlatform>            
+        </VerticalStackLayout.Padding>-->
+        <!--<Label Text="Notes"
+               HorizontalOptions="Center"
+               FontAttributes="Bold" />
+        <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="100" />
+        <Grid ColumnDefinitions="Auto, 30, Auto">
+            <Button Grid.Column="0"
+                    Text="Save" 
+                    WidthRequest="100"
+                    Clicked="OnSaveButtonClicked" />
+            <Button Grid.Column="2"
+                    Text="Delete" 
+                     WidthRequest="100"
+                    Clicked="OnDeleteButtonClicked" />
+        </Grid>-->
+        <!--https://learn.microsoft.com/en-us/training/modules/create-user-interface-xaml/8-exercise-add-behavior-xaml-page-->
+        <!--<VerticalStackLayout Padding="30,60,30,30">-->
+            <Label Text="Notes"
+            HorizontalOptions="Center"
+            FontAttributes="Bold" 
+            TextColor="{x:Static Member=notes:SharedResources.FontColor}" />
+
+            <Editor x:Name="editor"
+                Placeholder="Enter your note"
+                HeightRequest="{OnPlatform 100, Android=400, iOS=500}"                  
+                TextColor="{x:Static Member=notes:SharedResources.FontColor}"/>
+
+            <Grid Grid.Row="2" ColumnDefinitions="Auto,30,Auto">
+
+                <Button Grid.Column="0"
+                    Text="Save" 
+                    WidthRequest="100"
+                    TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                    BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                    Clicked="OnSaveButtonClicked" />
+
+                <Button Grid.Column="2"
+                    Text="Delete" 
+                    WidthRequest="100"
+                    TextColor="{x:Static Member=notes:SharedResources.FontColor}"
+                    BackgroundColor="{x:Static Member=notes:SharedResources.BackgroundColor}"
+                    Clicked="OnDeleteButtonClicked" />
+            </Grid>
+        <!--</VerticalStackLayout>-->
+        
+        <Label Text="Test font chữ dùng chung!"
+            Grid.Row="0"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="{x:Static Member=mycode:MainPage.MyFontSize}"
+            HorizontalOptions="CenterAndExpand"/>
+
+       
+
+    </VerticalStackLayout>
+</ContentPage>
